@@ -396,7 +396,7 @@ html.on body {
 }
 
 .small-header>.sub-menu>.menu-box>.inner {
-    width: 40%;
+    width: 45%;
     height: 100%;
     background-color: white;
 }
@@ -466,7 +466,6 @@ html.on body {
 .slider-bar {
     width: 100%;
     height: 700px;
-    /* margin-top: 50px; */
 }
 
 .small-slider-bar {
@@ -496,7 +495,7 @@ html.on body {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-position: center;
+    background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
     opacity: 0;

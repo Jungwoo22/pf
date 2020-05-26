@@ -43,7 +43,7 @@ $(document).on('click', '.page-btn>div', function () {
 
 setInterval(function () {
     $('.side-btn>.right').click();
-}, 3000);
+}, 5000);
 
 $(document).on('click', 'a', function (e) {
     if ($(this).attr('href') == '#') {

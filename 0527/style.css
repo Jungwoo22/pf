@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css2?family=Arimo:wght@700&display=swap");
+
+body {
+    font-family: "Arimo", sans-serif;
+}
+
+/* 노말라이즈 */
+
+body,
+ul,
+li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* 라이브러리 */
+
+.con {
+    margin: 0 auto;
+}
+
+.margin-0-auto {
+    margin: 0 auto;
+}
+
+.cell {
+    float: left;
+    box-sizing: border-box;
+}
+
+.cell-right {
+    float: right;
+    box-sizing: border-box;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.absolute-top {
+    position: absolute;
+    top: 0;
+}
+
+.absolute-left {
+    position: absolute;
+    left: 0;
+}
+
+.absolute-right {
+    position: absolute;
+    right: 0;
+}
+
+.absolute-bottom {
+    position: absolute;
+    bottom: 0;
+}
+
+.absolute-center {
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+}
+
+.absolute-middle {
+    position: absolute;
+    top: 50%;
+    transform: translatey(-50%);
+}
+
+.absolute-center.absolute-middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.block {
+    display: block;
+}
+
+.inline {
+    display: inline;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.img-box > img {
+    width: 100%;
+    display: block;
+}
+
+.line-height-0 {
+    line-height: 0;
+}
+
+.line-height-0 > * {
+    line-height: normal;
+}
+
+.font-size-0 {
+    font-size: 0;
+}
+
+.font-size-0 > * {
+    font-size: 1rem;
+}
+
+.clear-both {
+    clear: both;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.text-align-right {
+    text-align: right;
+}
+
+/* 커스텀 */
+
+.con {
+    width: 1200px;
+}
+
+/* 헤더바 */
+
+.header-bar {
+    margin: 30px 0;
+}
+
+.header-bar > .menu-box > ul {
+    position: relative;
+}
+
+.header-bar > .menu-box > ul > li {
+    margin-right: 25px;
+    font-size: 24px;
+    line-height: 45px;
+    overflow: hidden;
+}
+
+.header-bar > .menu-box > ul > li:not(.en)::after {
+    background-color: black;
+    width: 100%;
+    height: 1px;
+    content: "";
+    clear: both;
+    display: block;
+    transform: translatex(-100%);
+    transition: 0.5s;
+}
+
+.header-bar > .menu-box > ul > li:not(.en):hover::after {
+    transform: translatex(0);
+}
+
+.header-bar > .menu-box > ul > li.en > img {
+    display: inline-block;
+    transform: rotate(90deg);
+    width: 10px;
+    top: 25%;
+    right: 2%;
+}
+
+.header-bar > .menu-box > ul > li.en.active > ul {
+    display: block;
+}
+
+.header-bar > .menu-box > ul > li.en > ul {
+    text-align: right;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    display: none;
+    z-index: 100;
+}
+
+.header-bar > .menu-box > ul > li.en > ul > li {
+    font-size: 1.3rem;
+    font-family: normal;
+    font-weight: 500;
+    line-height: 2rem;
+}
+
+.header-bar > .logo-box {
+    display: inline-block;
+}
+
+.header-bar > .logo-box > a > img {
+    width: 150px;
+}
+
+/* 비주얼바 */
+
+.visual-bar {
+    height: 960px;
+    overflow: hidden;
+}
+
+.visual-bar > .inner {
+    animation-name: visual;
+    animation-duration: 5s;
+    animation-delay: 3s;
+    animation-direction: alternate;
+    animation-iteration-count: 3;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+}
+
+@keyframes visual {
+    0% {
+        transform: translateY(-200px);
+    }
+    33.33% {
+        transform: translateY(-1800px);
+    }
+    66.66% {
+        transform: translateY(-3500px);
+    }
+}
+
+.visual-bar > .inner > div {
+    width: 100%;
+    height: 1600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+.visual-bar > .inner > div:first-child {
+    background-position: center;
+}

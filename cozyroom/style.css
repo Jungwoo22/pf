@@ -1036,12 +1036,8 @@ html.on body {
 
 /* 콘텐츠-베스트상품-벽지/바닥 */
 
-.content>.inner>.best-product>.wall>nav>ul {
-    width:210px;
-}
-
 .content>.inner>.best-product>.wall>nav>ul>li:last-child {
-    margin-left: 21px;
+    margin-left: 10px;
     font-size: .9rem;
 }
 

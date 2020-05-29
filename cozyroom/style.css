@@ -1036,14 +1036,12 @@ html.on body {
 
 /* 콘텐츠-베스트상품-벽지/바닥 */
 
-.content>.inner>.best-product>.wall>nav>ul {
-    position: relative;
+.content>.inner>.best-product>.wall>nav>ul>li:last-child {
+    margin-left: 30px;
 }
 
-.content>.inner>.best-product>.wall>nav>ul>li:last-child {
-    right:3px;
-    font-size: .9rem;
-    position: absolute;
+.content>.inner>.best-product>.wall>nav>ul>li:last-child>h3 {
+    font-size: 1rem;
 }
 
 .content>.inner>.best-product>.wall>div {
@@ -1058,9 +1056,9 @@ html.on body {
     .content>.inner>.best-product>.wall>div {
         width: 33.333%;
     }
-
-    .content>.inner>.best-product>.wall>nav>ul>li:last-child {
-        margin-left: 27px;
+    
+    .content>.inner>.best-product>.wall>nav>ul>li:last-child>h3 {
+        font-size: 0.8rem;
     }
 }
 
@@ -1071,6 +1069,10 @@ html.on body {
 
     .content>.inner>.best-product>.wall>nav>ul>li:last-child {
         margin-left: 27px;
+    }
+
+    .content>.inner>.best-product>.wall>nav>ul>li:last-child>h3 {
+        font-size: 0.7rem;
     }
 }
 

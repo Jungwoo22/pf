@@ -68,7 +68,6 @@ function none() {
         }
     });
 }
-
 none();
 
 function sub() {
@@ -114,7 +113,6 @@ function sub() {
         e.stopPropagation();
     })
 }
-
 sub();
 
 $(window).resize(function () {
